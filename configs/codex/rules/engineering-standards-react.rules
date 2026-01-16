@@ -1,0 +1,4 @@
+# React taste layer rules
+- Apply heuristics from docs/engineering-standards/react/README.md.
+- Favor composition and readability in component design.
+- Handle loading, error, and empty states explicitly.

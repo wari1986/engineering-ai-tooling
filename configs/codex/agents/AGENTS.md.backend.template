@@ -1,0 +1,19 @@
+# AGENTS (Backend)
+
+You are assisting with a backend repository.
+
+## Objectives
+
+- Follow governance policies in docs/governance.
+- Apply security baseline in docs/security.
+- Never include secrets; use placeholders.
+
+## Constraints
+
+- Do not collect or output prompt/code content in telemetry.
+- Only use MCP servers approved in mcp/catalog/catalog.yaml.
+
+## Expectations
+
+- Provide clear diffs and references.
+- Prefer tests when feasible.

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI Tooling Metadata Telemetry",
+  "description": "Metadata-only telemetry schema. No prompt or code content allowed.",
+  "type": "object",
+  "properties": {
+    "timestamp": {"type": "string", "format": "date-time"},
+    "tool_name": {"type": "string"},
+    "repo": {"type": "string"},
+    "status": {"type": "string", "enum": ["success", "failure"]},
+    "duration_ms": {"type": "number"},
+    "error_code": {"type": "string"}
+  },
+  "required": ["timestamp", "tool_name", "status"],
+  "additionalProperties": false
+}
