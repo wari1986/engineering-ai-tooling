@@ -1,0 +1,9 @@
+version: 1
+org: ORG_NAME
+policy: ../policies/mcp-policy.md
+servers:
+  - name: example-llm-tooling
+    description: Placeholder MCP server template
+    owner: SECURITY_OWNER
+    status: placeholder
+    template: ../servers/example-server.yaml

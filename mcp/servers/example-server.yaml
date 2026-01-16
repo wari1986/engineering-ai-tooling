@@ -1,0 +1,9 @@
+name: example-llm-tooling
+owner: SECURITY_OWNER
+description: Placeholder MCP server configuration
+endpoint: https://mcp.example.com
+capabilities:
+  - read-only policies
+  - metadata-only telemetry
+notes: |
+  Replace with actual MCP server details. Do not include secrets.

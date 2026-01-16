@@ -1,0 +1,16 @@
+name: Telemetry Metadata Check (Reusable)
+
+on:
+  workflow_call:
+
+jobs:
+  telemetry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate telemetry schema placeholder
+        run: |
+          test -f telemetry/schema/metadata.json
+          echo "Telemetry schema placeholder present."

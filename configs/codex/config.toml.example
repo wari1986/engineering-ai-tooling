@@ -1,0 +1,35 @@
+# Codex configuration example
+# Copy to .codex/config.toml in product repos.
+
+[org]
+name = "ORG_NAME"
+repo = "GITHUB_ORG/engineering-ai-tooling"
+
+[policies]
+telemetry = "metadata-only"
+content_collection = false
+
+[rules]
+paths = [
+  "rules/governance.rules",
+  "rules/security.rules",
+  "rules/engineering-standards-react.rules",
+]
+
+[skills]
+paths = [
+  "skills/README.md",
+]
+
+[agents]
+agent_instructions = [
+  "agents/AGENTS.md.frontend.template",
+  "agents/AGENTS.md.backend.template",
+]
+
+[mcp]
+catalog = "../mcp/catalog/catalog.yaml"
+
+[bootstrap]
+# If layering is needed, use scripts/bootstrap_codex.sh to merge files.
+merge_strategy = "overlay"

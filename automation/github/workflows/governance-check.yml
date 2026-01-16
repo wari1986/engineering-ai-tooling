@@ -1,0 +1,26 @@
+name: Governance Check (Reusable)
+
+on:
+  workflow_call:
+    inputs:
+      codex_config_path:
+        required: true
+        type: string
+
+jobs:
+  governance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate Codex config exists
+        run: |
+          if [ ! -f "${{ inputs.codex_config_path }}" ]; then
+            echo "Missing Codex config at ${{ inputs.codex_config_path }}" >&2
+            exit 1
+          fi
+
+      - name: Placeholder governance check
+        run: |
+          echo "TODO: add org-specific governance validations"

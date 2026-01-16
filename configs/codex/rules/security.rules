@@ -1,0 +1,5 @@
+# Security rules
+- Do not collect or store prompt/code content.
+- Metadata-only telemetry is allowed per telemetry/README.md.
+- Use placeholders for secrets (e.g., ORG_NAME, SECURITY_OWNER).
+- Changes under mcp/ require SECURITY_OWNER approval.

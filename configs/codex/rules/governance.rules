@@ -1,0 +1,5 @@
+# Governance rules
+- Follow organization governance policies in docs/governance.
+- Use approved MCP servers from mcp/catalog/catalog.yaml.
+- Do not include secrets in configs or instructions.
+- Escalate policy exceptions to AI_GOVERNANCE_OWNER.
