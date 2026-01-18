@@ -3,9 +3,9 @@
 This repository is a **GitHub template** for building an organization-wide, auditable source of truth for AI governance and adoption. It provides:
 
 - A documentation system for governance, security, workflows, training, incident response, and changelog monitoring.
-- A complete Codex configuration pack (agents, rules, skills, config example, MCP catalog and policies).
+- Complete Codex and Claude configuration packs (agents, rules, skills, config examples, MCP catalog and policies).
 - Reusable GitHub Actions workflow templates for product repos.
-- Bootstrap/update scripts to sync org-managed configuration into developer `~/.codex` safely.
+- Bootstrap/update scripts to sync org-managed configuration into developer `~/.codex` and `~/.claude` safely.
 - A “taste layer” for engineering standards, starting with React best practices.
 - Adoption examples for common stacks (Next/Node + Python/Flask).
 
@@ -22,6 +22,8 @@ This repository is a **GitHub template** for building an organization-wide, audi
 
 - `docs/` – Governance, security, workflows, training, incident response, rollout, and changelog watch loop.
 - `configs/codex/` – Codex configuration pack (agents, rules, skills, config example).
+- `configs/claude/` – Claude configuration pack (settings, skills, hooks).
+- `CLAUDE.md` – Repository-level instructions for Claude Code.
 - `mcp/` – MCP catalog, server templates, and policies.
 - `automation/github/` – Reusable workflow examples and issue/PR templates.
 - `scripts/` – Bootstrap, update, and validation scripts.
@@ -41,6 +43,14 @@ The Codex pack lives in `configs/codex/` and includes:
 - `rules/*.rules` – Organization-specific rules to guide behavior.
 - `skills/` – Skill scaffolding templates for repeatable tasks.
 - `agents/` – `AGENTS.md` templates to drop into repos.
+
+## Claude configuration pack
+
+The Claude pack lives in `configs/claude/` and includes:
+
+- `settings/` – Global and project settings templates.
+- `skills/` – Short, task-scoped skills that reference standards in `docs/`.
+- `hooks/` – Pre-run and post-run hooks for governance and auditing.
 
 ## Bootstrap/update mechanism
 

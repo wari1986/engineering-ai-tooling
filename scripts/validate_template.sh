@@ -9,11 +9,21 @@ REQUIRED_FILES=(
   "docs/workflows/README.md"
   "docs/training/README.md"
   "docs/incident-response/README.md"
+  "docs/incident-response/claude-code-troubleshooting.md"
   "docs/changelog-watch/README.md"
   "docs/engineering-standards/react/README.md"
   "configs/codex/config.toml.example"
+  "configs/claude/README.md"
+  "configs/claude/settings/global-settings.example.json"
+  "configs/claude/settings/project-settings.example.json"
+  "configs/claude/settings/mcp.project.example.json"
+  "configs/claude/hooks/pre-run.example.sh"
+  "configs/claude/hooks/post-run.example.sh"
+  "scripts/bootstrap_claude.sh"
+  "scripts/update_claude.sh"
   "mcp/catalog/catalog.yaml"
   "telemetry/schema/metadata.json"
+  "CLAUDE.md"
 )
 
 missing=0

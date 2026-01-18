@@ -15,12 +15,18 @@ Define organization-wide governance for AI tooling, including ownership, change 
 - Applies to all AI-assisted engineering workflows.
 - Applies to all product repositories integrating Codex configurations or MCP servers.
 - Requires metadata-only telemetry (no prompt/code content).
+ - Applies to Claude Code usage and settings where deployed.
 
 ## Change control
 
 1. Propose changes via pull request.
 2. Required approvals: AI governance owner + security owner.
 3. Update changelog watch loop after merging.
+
+## Claude Code governance notes
+
+- Claude Code settings and hooks must follow the same change control as Codex.
+- Repository-level instructions live in `CLAUDE.md`.
 
 ## Evidence and audit
 

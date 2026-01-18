@@ -1,0 +1,40 @@
+{
+  "model": "sonnet",
+  "permissions": {
+    "allow": [
+      "Bash(npm run lint)",
+      "Bash(npm run test:*)",
+      "Read(~/.zshrc)"
+    ],
+    "deny": [
+      "Bash(curl:*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true,
+    "excludedCommands": ["docker"],
+    "network": {
+      "allowUnixSockets": ["/var/run/docker.sock"],
+      "allowLocalBinding": true
+    }
+  },
+  "env": {
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "0"
+  },
+  "attribution": {
+    "commit": "Generated with AI\n\nCo-Authored-By: AI <ai@example.com>",
+    "pr": ""
+  },
+  "companyAnnouncements": [
+    "Review engineering standards at docs/engineering-standards/",
+    "Security policy updates are tracked in docs/security/"
+  ],
+  "fileSuggestion": {
+    "type": "command",
+    "command": "~/.claude/file-suggestion.sh"
+  }
+}

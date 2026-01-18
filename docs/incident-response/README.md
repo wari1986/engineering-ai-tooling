@@ -32,3 +32,7 @@ Provide a standard response for AI-related incidents (policy violations, unexpec
 - Timeline
 - Remediation actions
 - Policy updates required
+
+## Claude Code troubleshooting
+
+See `docs/incident-response/claude-code-troubleshooting.md` for CLI and integration triage steps.

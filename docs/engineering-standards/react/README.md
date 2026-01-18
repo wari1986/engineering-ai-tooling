@@ -8,6 +8,13 @@ This is a **human- and agent-readable** set of heuristics for consistent, high-q
 - Prefer explicitness and readability over cleverness.
 - Document exceptions in the PR description.
 
+## Agent skill (React best practices)
+
+This repo ships a short Codex skill in `configs/codex/skills/react-best-practices/`
+that points to the full Vercel React/Next.js performance guidance in
+`docs/engineering-standards/react/vercel-react-best-practices/AGENTS.md`.
+Use it when implementing or reviewing performance-sensitive React/Next.js code.
+
 ## Heuristics
 
 ### Components

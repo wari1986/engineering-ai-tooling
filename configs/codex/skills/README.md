@@ -7,3 +7,7 @@ Use this directory to define reusable skills that agents can follow.
 - Validate presence of docs and configs.
 - Confirm telemetry is metadata-only.
 - Check for missing placeholders.
+
+## Included skills
+
+- `react-best-practices/` – Short skill that references the React performance standards in `docs/engineering-standards/react/`.
