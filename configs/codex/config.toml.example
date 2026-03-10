@@ -3,7 +3,7 @@
 
 [org]
 name = "ORG_NAME"
-repo = "GITHUB_ORG/engineering-ai-tooling"
+repo = "GITHUB_ORG/AI_TOOLING_REPO"
 
 [policies]
 telemetry = "metadata-only"

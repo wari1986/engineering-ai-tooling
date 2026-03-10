@@ -9,7 +9,7 @@ These scripts can also distribute the Claude configuration pack.
 - `update_codex.sh` – Update existing `~/.codex` with the latest org-managed configuration.
 - `bootstrap_claude.sh` – Initialize `~/.claude` with org-managed configuration.
 - `update_claude.sh` – Update existing `~/.claude` with the latest org-managed configuration.
-- `validate_template.sh` – Validate this repo for required files and placeholders.
+- `validate_template.sh` – Validate this repository for required files and placeholders.
 
 ## Safety
 

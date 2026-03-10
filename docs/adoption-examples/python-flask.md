@@ -30,14 +30,14 @@ on:
   pull_request:
 jobs:
   governance:
-    uses: GITHUB_ORG/engineering-ai-tooling/.github/workflows/governance-check.yml@main
+    uses: GITHUB_ORG/AI_TOOLING_REPO/.github/workflows/governance-check.yml@main
     with:
       codex_config_path: .codex/config.toml
 ```
 
 4. Add metadata-only telemetry guidance:
 
-- Follow `telemetry/README.md` in this repo.
+- Follow `telemetry/README.md` in your governance repository.
 
 ## Optional: Flask-specific checks
 

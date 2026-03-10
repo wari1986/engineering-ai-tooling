@@ -11,7 +11,7 @@
 ## Build, Test, and Development Commands
 - `./scripts/validate_template.sh` verifies required files and placeholders are present.
 - `./scripts/bootstrap_codex.sh` copies `configs/codex/` into `~/.codex` with a backup.
-- `./scripts/update_codex.sh` refreshes an existing `~/.codex` from this repo.
+- `./scripts/update_codex.sh` refreshes an existing `~/.codex` from this repository.
 
 ## Coding Style & Naming Conventions
 - Shell scripts use bash with `set -euo pipefail`; keep changes consistent with existing style.
@@ -19,12 +19,12 @@
 - Use placeholder names (e.g., `ORG_NAME`, `GITHUB_ORG`, `SECURITY_OWNER`) until an org-specific rollout.
 
 ## Testing Guidelines
-- There is no automated test suite in this template repo.
+- There is no automated test suite in this repository.
 - Run `./scripts/validate_template.sh` before submitting changes that touch required files.
 - When adding new required assets, update `scripts/validate_template.sh` accordingly.
 
 ## Commit & Pull Request Guidelines
-- Commit messages in this repo are short, imperative summaries (e.g., "Add AI governance template structure").
+- Commit messages in this repository are short, imperative summaries (e.g., "Add AI governance template structure").
 - Use pull requests for changes and align updates with the governance change control process.
 - PRs should include a brief summary, affected paths (e.g., `docs/governance/`), and validation notes.
 

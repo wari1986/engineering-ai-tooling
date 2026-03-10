@@ -48,7 +48,7 @@ Update ownership sections in:
 ## 4. Enable reusable workflows
 
 - Update reusable workflow references in `automation/github/workflows/` with your org repo paths.
-- Publish this repo as a **public or internal template** in GitHub settings.
+- Publish this template as a **public or internal template** in GitHub settings.
 
 ## 5. Configure Codex and Claude pack distribution
 

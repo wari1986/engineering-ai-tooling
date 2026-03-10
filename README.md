@@ -1,13 +1,13 @@
 # Engineering AI Tooling Template
 
-This repository is a **GitHub template** for building an organization-wide, auditable source of truth for AI governance and adoption.
+This template is a **GitHub template** for building an organization-wide, auditable source of truth for AI governance and adoption.
 
 ## Quick start
 
 1. Click **Use this template** on GitHub to create your org-owned copy.
 2. Complete the checklist in [TEMPLATE_SETUP.md](TEMPLATE_SETUP.md).
 3. Wire reusable workflows into product repos with [docs/adoption-examples](docs/adoption-examples).
-4. Publish this repo as the single source of truth for AI governance and adoption.
+4. Publish this repository as the single source of truth for AI governance and adoption.
 
 ## Repository map
 
