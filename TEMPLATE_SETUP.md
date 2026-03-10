@@ -21,37 +21,49 @@ Suggested command:
 rg -n "ORG_NAME|GITHUB_ORG|SECURITY_OWNER|AI_GOVERNANCE_OWNER|DATA_PRIVACY_OWNER|INCIDENT_EMAIL|SLACK_INCIDENT_CHANNEL|DOCS_URL" -S
 ```
 
-## 2. Confirm governance owners
+## 2. Configure unified AI layout
 
-- Update ownership sections in:
-  - `docs/governance/README.md`
-  - `docs/security/README.md`
-  - `docs/incident-response/README.md`
+Adopt the standard structure in product repos:
 
-## 3. Enable reusable workflows
+- `.ai/openai/` (Codex entry via `AGENTS.md` boot sequence)
+- `.ai/claude/` (Claude supplemental docs)
+- `CLAUDE.md` at repo root with `@.ai/claude/context.md`
+- `.claude/rules/*.md` for path-scoped additive rules
+
+Use templates from:
+
+- `configs/codex/.ai/openai/`
+- `configs/claude/.ai/claude/`
+- `configs/claude/CLAUDE.md.template`
+- `configs/claude/.claude/rules/`
+
+## 3. Confirm governance owners
+
+Update ownership sections in:
+
+- `docs/governance/README.md`
+- `docs/security/README.md`
+- `docs/incident-response/README.md`
+
+## 4. Enable reusable workflows
 
 - Update reusable workflow references in `automation/github/workflows/` with your org repo paths.
 - Publish this repo as a **public or internal template** in GitHub settings.
 
-## 4. Configure Codex pack distribution
+## 5. Configure Codex and Claude pack distribution
 
-- Decide where to host the Codex pack (e.g., this repo or a release artifact).
-- Update `scripts/bootstrap_codex.sh` and `scripts/update_codex.sh` with your distribution URL or git ref.
-- If you use GitHub Releases, update `scripts/bootstrap_codex.sh` to point to the latest asset.
+- Update script distribution assumptions in `scripts/bootstrap_codex.sh`, `scripts/update_codex.sh`, `scripts/bootstrap_claude.sh`, and `scripts/update_claude.sh`.
+- Decide whether developers consume packs directly or through release artifacts.
 
-## 5. Add MCP servers
+## 6. Add MCP servers
 
-- Add your org-approved MCP server templates to `mcp/servers/`.
-- Update the catalog in `mcp/catalog/catalog.yaml`.
+- Add org-approved MCP server templates to `mcp/servers/`.
+- Update `mcp/catalog/catalog.yaml`.
 
-## 6. Train adopters
+## 7. Train adopters
 
 - Share `docs/training/README.md` with product teams.
-- Ensure they adopt the taste layer (`docs/engineering-standards/react/README.md`).
-
-## 7. Roll out to product repos
-
-- Use the adoption examples in `docs/adoption-examples/` to wire reusable workflows, policies, and Codex configs.
+- Ensure they adopt your engineering standards layer.
 
 ## 8. Verify validation scripts
 
@@ -63,13 +75,4 @@ Run:
 
 ## 9. Publish governance changelog cadence
 
-- Update `docs/changelog-watch/README.md` with your cadence and notification channel.
-
----
-
-## Rollout steps (high-level)
-
-1. Stakeholders approve governance baseline.
-2. Security and privacy sign off on metadata-only telemetry guidance.
-3. Pilot in one product repo, then roll out across teams.
-4. Quarterly review of policies and workflow templates.
+- Update `docs/changelog-watch/README.md` with cadence and notification channels.

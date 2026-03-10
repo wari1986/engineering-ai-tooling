@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+shopt -s dotglob nullglob
+
 CODENAME="ORG_NAME"
 SOURCE_DIR="$(pwd)/configs/codex"
 TARGET_DIR="${HOME}/.codex"

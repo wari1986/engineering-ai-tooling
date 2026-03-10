@@ -15,3 +15,8 @@ These scripts can also distribute the Claude configuration pack.
 
 - Scripts use a **copy + backup** strategy; no destructive deletes by default.
 - Adjust the distribution URL or git ref placeholders before use.
+
+
+## Unified `.ai/` note
+
+The bootstrap/update scripts copy hidden directories (for example `.ai/` and `.claude/`) so agent templates preserve their expected layout.
