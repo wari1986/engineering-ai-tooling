@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+shopt -s dotglob nullglob
+
 SOURCE_DIR="$(pwd)/configs/codex"
 TARGET_DIR="${HOME}/.codex"
 BACKUP_DIR="${TARGET_DIR}.backup.$(date +%Y%m%d%H%M%S)"

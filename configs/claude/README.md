@@ -1,40 +1,25 @@
 # Claude configuration pack
 
-This folder is the org-managed configuration pack for Claude Code. Keep it minimal and auditable.
+This folder provides template assets for repositories using Claude Code.
 
 ## Layout
 
-- `settings/` – Templates for global and project settings.
-- `skills/` – Short, task-scoped skills for common workflows.
-- `hooks/` – Pre-run and post-run hooks for governance and auditing.
+- `CLAUDE.md.template` – Root entrypoint template (always loaded by Claude Code).
+- `.ai/claude/` – Supplemental Claude docs (context, architecture, decisions, runbooks, tasks).
+- `.claude/rules/` – Path-scoped additive rules with YAML `paths` frontmatter.
+- `settings/` – Global and project settings templates.
+- `skills/` – Task-scoped skills.
+- `hooks/` – Pre-run and post-run automation examples.
 
-## Settings guidance
+## Discovery model
 
-Create templates for:
+- Claude always loads root `CLAUDE.md`.
+- `CLAUDE.md` should import `@.ai/claude/context.md` each session.
+- `ARCHITECTURE.md` and `DECISIONS.md` should be referenced on demand, not imported each session.
+- `.claude/rules/*.md` load automatically when edited paths match their frontmatter.
 
-- Global defaults (model selection, context limits).
-- Project overrides (allowed tools, repo-specific policies).
+## Authoring guidelines
 
-Store templates in `settings/` and document how to apply them in onboarding.
-Claude Code settings files live at `~/.claude/settings.json` (user),
-`.claude/settings.json` (project), and `.claude/settings.local.json` (local).
-
-Project MCP configuration lives in `.mcp.json`. See
-`configs/claude/settings/mcp.project.example.json` for a starter template.
-
-Reference docs:
-
-- https://code.claude.com/docs/en/settings
-- https://code.claude.com/docs/en/hooks
-
-## Skills guidance
-
-Skills should be short, explicit, and task-scoped. Keep long-form guidance in `docs/` and reference it from skills.
-
-## Hooks guidance
-
-Use hooks for non-destructive checks (e.g., secret scanning, policy reminders) and metadata-only logging.
-
-## MCP alignment
-
-If you add MCP servers or tools for Claude, record them in `mcp/` so governance and approvals stay centralized.
+- Keep `CLAUDE.md` under 200 lines.
+- Keep module rules additive; avoid duplicating global instructions from `CLAUDE.md`.
+- Use placeholders instead of org-specific identifiers.
