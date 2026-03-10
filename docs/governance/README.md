@@ -32,6 +32,6 @@ Define organization-wide governance for AI tooling, including ownership, change 
 
 Maintain:
 
-- Signed-off PRs in this repo.
+- Signed-off PRs in this repository.
 - Release notes in `docs/changelog-watch/README.md`.
 - Decision records in `docs/workflows/decision-records.md`.

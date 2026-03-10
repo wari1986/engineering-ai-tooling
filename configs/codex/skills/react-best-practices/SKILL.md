@@ -1,6 +1,6 @@
 ---
 name: react-best-practices
-description: Apply the React/Next.js performance standards from this repo when writing, reviewing, or refactoring React/Next.js code. Use for performance-sensitive UI work, data fetching, and bundle size reviews.
+description: Apply the React/Next.js performance standards from this repository when writing, reviewing, or refactoring React/Next.js code. Use for performance-sensitive UI work, data fetching, and bundle size reviews.
 metadata:
   author: org
   version: "1.0.0"
