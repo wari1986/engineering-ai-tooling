@@ -37,6 +37,22 @@ Use templates from:
 - `configs/claude/CLAUDE.md.template`
 - `configs/claude/.claude/rules/`
 
+## 2a. Bootstrap a product repo with the unified AI folder
+
+Use the helper script from this governance repo:
+
+```bash
+./scripts/install_ai_folder.sh /path/to/your-nextjs-repo
+```
+
+This copies:
+
+- `.ai/`
+- `.claude/rules/`
+- `CLAUDE.md`
+
+Then fill the stack details in the copied templates (framework, module scopes, RHF/TSQ/axios patterns, and sandbox settings).
+
 ## 3. Confirm governance owners
 
 Update ownership sections in:

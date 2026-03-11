@@ -10,6 +10,7 @@ These scripts can also distribute the Claude configuration pack.
 - `bootstrap_claude.sh` – Initialize `~/.claude` with org-managed configuration.
 - `update_claude.sh` – Update existing `~/.claude` with the latest org-managed configuration.
 - `validate_template.sh` – Validate this repository for required files and placeholders.
+- `install_ai_folder.sh` – Copy `.ai/`, `.claude/rules/`, and `CLAUDE.md` into a target product repository.
 
 ## Safety
 
